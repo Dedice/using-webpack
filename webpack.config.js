@@ -9,7 +9,23 @@ var config = {
     output: {
         path: path.join(__dirname, 'build'),
         filename: '[name].bundle.js',
-        publicPath: '/'
+        publicPath: '/public/'
+    },
+    module: {
+        loaders: [
+            {
+                test: /\.js$/,
+                loader: 'babel-loader',
+                exclude: /node_modules/,
+                query: {
+                    presets: ['es2015']
+                }
+            }
+        ],
+    },
+    watch: true,
+    devServer: {
+        contentBase: 'public'
     }
 };
 

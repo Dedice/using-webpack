@@ -5,7 +5,7 @@ const products = [{
     description: 'With a sleek aluminum body, a live home screen that streams all of your favorite content, a photo gallery that comes to life, and dual frontal stereo speakers, the new HTC One is ready to reshape your smartphone experience.',
     image: 'htc-one-m7-view.jpg',
     mpn: 'A123X',
-    release_date: new ISODate("2013-03-17T08:14:15.656Z"),
+    release_date: new Date('2013-03-17T08:14:15.656Z'),
     manufacturer: {
         name: 'HTC',
         logo: 'htc-logo.jpg',
@@ -30,7 +30,7 @@ const products = [{
     description: 'Game with maximum mobility. 13-inch laptop with Intel ® processors, an optional graphics amplifier, all-day battery life and optional 62 WHr for ultimate on-the-go action.',
     image: 'alienware-13r2-view.jpg',
     mpn: 'A378S1DDW',
-    release_date: new ISODate("2015-07-17T08:14:15.656Z"),
+    release_date: new Date('2015-07-17T08:14:15.656Z'),
     manufacturer: {
         name: 'Dell',
         logo: 'dell-logo.jpg',
