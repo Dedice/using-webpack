@@ -2,7 +2,8 @@
   "name": "using-webpack",
   "version": "0.0.1",
   "scripts": {
-    "start": "webpack-dev-server --progress -colors"
+    "dev": "webpack-dev-server --progress -colors",
+    "build": "webpack"
   },
   "author": "Andrew Pavlyuk <devdice@outlook.com>",
   "license": "ISC",

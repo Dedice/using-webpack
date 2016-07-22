@@ -2,14 +2,14 @@ var webpack = require('webpack');
 var path = require('path');
 
 var config = {
-    context: path.join(__dirname, 'source'),
+    context: path.resolve(__dirname, 'source'),
     entry: {
         main: './app/main.js',
     },
     output: {
-        path: path.join(__dirname, 'build'),
+        path: path.resolve(__dirname, 'build'),
         filename: '[name].bundle.js',
-        publicPath: '/public/'
+        publicPath: '/build/'
     },
     module: {
         loaders: [
@@ -21,11 +21,10 @@ var config = {
                     presets: ['es2015']
                 }
             }
-        ],
+        ]
     },
-    watch: true,
     devServer: {
-        contentBase: 'public'
+        contentBase: "public/"
     }
 };
 
